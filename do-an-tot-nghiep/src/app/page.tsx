@@ -4,7 +4,7 @@ import styles from './page.module.scss'
 export default function Home() {
   return (
     <div>
-      <p>đồ án học viện bưu chính viễn thông</p>
+  <Headers />
     </div>
   )
 }
