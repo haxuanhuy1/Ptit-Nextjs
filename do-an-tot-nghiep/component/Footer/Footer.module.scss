@@ -1,0 +1,40 @@
+.footer {
+    background-image: url('/img/anhnen3.jpg');
+    width: 100%;
+    height: 550px;
+    padding-top: 50px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    .text{
+        padding-top: 50px;
+        .button{
+            background-color: red
+        }
+    }
+    .colmd{
+        padding-left: 80px;
+    }
+    .col1{
+        padding-left: 100PX;
+    }
+    .footer1{
+        position: absolute;
+       width: 90%;
+       height: 80%;
+        padding-left: 200px;
+
+    }
+    .form{
+    padding-left: 630px;
+    .formcontrol{
+        width: 450px;
+    }
+}
+.formlabel{
+    color: #fff;
+    margin-left: -225px;
+    padding-left: 230px;
+}
+    
+}

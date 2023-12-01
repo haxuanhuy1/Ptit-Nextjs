@@ -1,0 +1,36 @@
+.logo{
+    width: 100px;
+    height: 80px;
+}
+.icons{
+    display: flex;
+    font-size: 15px;
+    padding-left: 900px;
+    border-bottom:  1px solid #ccc;
+    padding-top: 10px;
+    .icon1{
+        display: flex;
+    }
+}
+.lists{
+    display: flex;
+    height: 95px;
+}
+.list {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 90px;
+    li{
+        list-style-type: none;
+        &:hover{
+            border-top: 2px solid blue;
+        }
+        a{
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+}

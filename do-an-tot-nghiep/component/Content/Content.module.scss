@@ -1,0 +1,59 @@
+.custom-card-title {
+    color: #007bff;
+  }
+  .Content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .dropdown{
+    padding-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+  }
+  .card-text{
+    color: green;
+  }
+  .card {
+    border-radius: 5px;
+  }
+  .row1{
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    .customcol {
+      cursor: pointer;
+    p {
+      &:hover {
+        color: blue;
+      }
+    }
+    }
+  }
+  .quasudung {
+    padding-top: 50px;
+    padding-left: 80px;
+    height: 1060px;
+    width: 100%;
+    background-image: url('/img/anhnen.png')
+   
+  }
+  .daili{
+    padding-top: 40px;
+    padding-left: 100px;
+    a{
+      text-decoration: none;
+    }
+    p{
+      font-size: 15px;
+    }
+    .xemchitiet{
+      background-color: #ccc;
+      border: none;
+      &:hover{
+        background-color: #007bff;
+      }
+    }
+  }
