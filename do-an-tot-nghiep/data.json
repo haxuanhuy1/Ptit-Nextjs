@@ -1,0 +1,96 @@
+{
+ 
+
+    "Mercerdes": [
+      {
+        "id": 1,
+        "name": "Mercerdes-Benz C200",
+        "name2": "Mer C200",
+        "img": "C200",
+        "gia": "1.200.000.000"
+      },
+      {
+        "name": "Mercerdes-Benz C250",
+        "salary": "C250",
+        "id": 2,
+        "img": "",
+        "gia": "1.300.000.000",
+        "name2": "Mer C250"
+      },
+      {
+        "name": "Mercerdes-Benz E200",
+        "salary": "E200",
+        "id": 3,
+        "img": "",
+        "gia": "2.200.000.000",
+        "name2" : "Mer E200"
+      },
+      {
+        "name": "Mercerdes-Benz E180",
+        "salary": "E180",
+        "id": 4,
+        "img": "",
+        "gia": "1.800.000.000",
+        "name2": "Mer E180"
+      },
+      {
+        "name": "Mercerdes-Benz E300 AMG",
+        "salary": "E300 AMG",
+        "id": 5,
+        "img": "",
+        "gia": "2.500.000.000",
+        "name2": "Mer E300 AMG"
+      },
+      {
+        "name": "Mercerdes-Benz ESQ",
+        "salary": "ESQ",
+        "id": 6,
+        "img": "",
+        "gia": "2.120.000.000",
+        "name2": "Mer ESQ"
+      },
+      {
+        "name": "Mercerdes-Benz S450",
+        "salary": "S450",
+        "id": 7,
+        "img": "",
+        "gia": "4.200.000.000",
+        "name2": "Mer S450"
+      },
+      {
+        "name": "Mercerdes-Benz S450 lucxury",
+        "salary": "S450 lucxury",
+        "id": 8,
+        "img": "",
+        "gia": "5.299.000.000",
+        "name2": "Mer S450 Lucxury"
+      },
+      {
+        "name": "Mercerdes-Benz GLC 200 4matic",
+        "salary": "GLC 200 4matic",
+        "id": 9,
+        "img": "/GLC2004matic2023.jpg",
+        "gia": "1.740.000.000",
+        "name2": "GLC 200 4matic"
+      },
+      {
+        "name": "Mercerdes-Benz GLC 300 4matic",
+        "salary": "GLC 300 4matic",
+        "id": 10,
+        "img": "/GLC3004matic2023.jpg",
+        "gia": "2.450.000.000",
+        "name2": "GLC 300 4matic"
+      },
+      {
+        "name": "Mercerdes-Benz GLS 450 4matic",
+        "salary": "GLS 450 4matic",
+        "id": 11,
+        "img": "/GLS4504matic2023.jpg",
+        "name2": "GLC 450 4matic",
+        "gia": "6.000.000.000"
+      }
+     
+
+    ]
+  
+  }

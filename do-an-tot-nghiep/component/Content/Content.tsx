@@ -4,9 +4,7 @@ import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from 'next/dist/shared/l
 import {C200 , C200EvantGarfe , C300,E180,E200,ESQ,E300,Glc200,Glc300,GLS450,
     S450,S450lx,c200cu2018,c200cu2019,e200cu,e200dencu,glc200cu,c250,nhatrang, cantho,hoankiem} from '../../component/Img/Img.tsx'
 const Content = ()=>{
-   fetch("http://localhost:3000/posts")
-   .then(response => response.json())
-   .then(data => console.log(data))
+   
     return(
         <div className={clsx(Styles.Content)}>
 

@@ -14,13 +14,11 @@ const store = configureStore({
 });
 export default function Home() {
   // Tạo store Redux
+
   return (
     <div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
         <Header />
-    
         <Slide />
         <Content />
         <Footer />

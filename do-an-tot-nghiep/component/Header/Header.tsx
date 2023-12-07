@@ -16,21 +16,28 @@ const Header = ()=>{
         id : number,
         payload : boolean
     }
-    const [posts, setPosts] = useState([]);
+    interface Mer {
+
+    }
     const Logo = './img/logo.png'
-    useEffect(() => {
-        // Gửi yêu cầu GET đến json-server khi component được tải
-        const fetchData = async () => {
-          try {
-            const response = await axios.get('http://localhost:3001/posts');
-            setPosts(response.data);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
-        };
-    
-        fetchData();
-      }, []);
+    // const [posts, setPosts] = useState();
+//  async function Api(){
+//     const respon = await fetch(`http://localhost:3001/Mercerdes`)
+//     const data = await respon.json()
+//     setPosts(data)
+//  }     
+// useEffect(()=>{
+//     Api()
+// },[])
+// useEffect(()=>{
+//   const fetchData = async ()=>{
+//     const response = await fetch(`http://localhost:3001/Mercerdes?q=GLC`)
+//     const data2 = await response.json()
+//     console.log(data2)
+//   }
+//    fetchData()
+// }, [])
+   
     return(
         <div>
             <div className={clsx(Styles.icons)}>
