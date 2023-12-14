@@ -46,7 +46,7 @@ const handclickSeach = ()=>{
  post.length >0 ?  <div className={clsx(Styles.seach2)} >
     <div style={{borderBottom: "1px solid #ccc"}}>
     {post.map((post2)=> (
-        <Link href='/Dasboad'>
+        <Link href='/Dasboad/1'>
         <div onClick={handclickSeach} className={clsx(Styles.seach3)}>
             <img style={{width: '100px'}} src={post2.img}></img>
             <div className={clsx(Styles.seach4)}>

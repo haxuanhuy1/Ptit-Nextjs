@@ -1,10 +1,16 @@
 import clsx from 'clsx'
 import Styles from './Content.module.scss'
 import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from 'next/dist/shared/lib/constants'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import {C200 , C200EvantGarfe , C300,E180,E200,ESQ,E300,Glc200,Glc300,GLS450,
     S450,S450lx,c200cu2018,c200cu2019,e200cu,e200dencu,glc200cu,c250,nhatrang, cantho,hoankiem} from '../../component/Img/Img.tsx'
 const Content = ()=>{
-   
+  const handclicks = ()=>{
+
+    const router = useRouter()
+    router.push('/Dasboad')
+  }
     return(
         <div className={clsx(Styles.Content)}>
 
@@ -13,6 +19,7 @@ const Content = ()=>{
   
   <div  className={clsx("row" , Styles.row1)}>
     <div className={clsx( 'col', Styles.customcol)}>
+    <Link href='/Dasboad/1'>
     <div  className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={C200} alt="Card image cap"/>
   <div className="card-body">
@@ -20,8 +27,11 @@ const Content = ()=>{
     <a >1.599.000.000 VNĐ</a>
   </div>
 </div>
+</Link>
     </div>
-    <div className={clsx("col" , Styles.customcol)}>
+    
+    <div  className={clsx("col" , Styles.customcol)}>
+    <Link href='/Dasboad/2'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={C200EvantGarfe} alt="Card image cap"/>
@@ -32,8 +42,10 @@ const Content = ()=>{
 </div>
     </div>
     
+    </Link>
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+    <Link href='/Dasboad/3'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={C300} alt="Card image cap"/>
@@ -44,6 +56,7 @@ const Content = ()=>{
 </div>
     </div>
     
+    </Link>
     </div>
     
 </div>
@@ -51,6 +64,8 @@ const Content = ()=>{
 {/* /* mercedes này  */ }
 <div  className={clsx("row" , Styles.row1)}>
     <div className={clsx( 'col', Styles.customcol)}>
+      <Link href='/Dasboad/4'>
+
     <div  className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={E180} alt="Card image cap"/>
   <div className="card-body">
@@ -58,8 +73,11 @@ const Content = ()=>{
     <a >2.159.000.000 VNĐ</a>
   </div>
 </div>
+      </Link>
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/5'>
+
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={E200} alt="Card image cap"/>
@@ -69,9 +87,12 @@ const Content = ()=>{
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/6'>
+
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={ESQ} alt="Card image cap"/>
@@ -81,6 +102,7 @@ const Content = ()=>{
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     
@@ -88,6 +110,7 @@ const Content = ()=>{
 {/* mer gls */}
 <div  className={clsx("row" , Styles.row1)}>
     <div className={clsx( 'col', Styles.customcol)}>
+      <Link href='/Dasboad/7'>
     <div  className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={E300} alt="Card image cap"/>
   <div className="card-body">
@@ -95,8 +118,10 @@ const Content = ()=>{
     <a >3.029.000.000 VNĐ</a>
   </div>
 </div>
+      </Link>
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/8'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={Glc200} alt="Card image cap"/>
@@ -106,9 +131,11 @@ const Content = ()=>{
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/9'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={Glc300} alt="Card image cap"/>
@@ -118,6 +145,7 @@ const Content = ()=>{
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     
@@ -125,6 +153,7 @@ const Content = ()=>{
 {/* S luxury */}
 <div  className={clsx("row" , Styles.row1)}>
     <div className={clsx( 'col', Styles.customcol)}>
+      <Link href='/Dasboad/10'>
     <div  className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={S450lx} alt="Card image cap"/>
   <div className="card-body">
@@ -132,8 +161,10 @@ const Content = ()=>{
     <a >5.599.000.000 VNĐ</a>
   </div>
 </div>
+      </Link>
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/11'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={GLS450} alt="Card image cap"/>
@@ -143,18 +174,21 @@ const Content = ()=>{
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     <div className={clsx("col" , Styles.customcol)}>
+      <Link href='/Dasboad/12'>
     <div >
     <div className="card" style={{width: '18rem'}}>
   <img className="card-img-top" src={S450} alt="Card image cap"/>
   <div className="card-body">
-    <p className="card-text">Mercedes-Benz S450 | Mercedes Hà Nội</p>
+    <p style={{textDecoration: 'none'}} className="card-text">Mercedes-Benz S450 | Mercedes Hà Nội</p>
     <a >4.099.000.000 VNĐ</a>
   </div>
 </div>
     </div>
+      </Link>
     
     </div>
     

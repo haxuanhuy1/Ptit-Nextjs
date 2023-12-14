@@ -23,12 +23,17 @@
     padding-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
     .customcol {
       cursor: pointer;
     p {
       &:hover {
         color: blue;
+        text-decoration: none;
       }
+    }
+    a{
+      text-decoration: none;
     }
     }
   }

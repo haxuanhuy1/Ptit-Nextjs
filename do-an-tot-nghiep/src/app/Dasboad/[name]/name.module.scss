@@ -1,0 +1,22 @@
+.Name {
+    .Name2 {
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        img {
+            width: 700px;
+            height: 490px;
+        }
+    }
+    .Img {
+        img {
+            width: 600px;
+            height: 500px;
+        }
+    }
+}

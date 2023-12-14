@@ -37,7 +37,14 @@ const Header = ()=>{
 //   }
 //    fetchData()
 // }, [])
-   
+   const [seach , setSeach] = useState(false)
+   const handSeach = ()=>{
+    if(seach){
+        setSeach(false)
+    }else {
+        setSeach(true)
+    }
+   }
     return(
         <div>
             <div className={clsx(Styles.icons)}>
@@ -74,10 +81,11 @@ const Header = ()=>{
            <li><a>TIN TỨC</a></li>
          </ul>
             {/* <i style={{lineHeight:'100px', paddingRight: '100px'}} className="fa-solid fa-magnifying-glass"></i> */}
-            <div style={{lineHeight: '100px', paddingRight: '80px'}}>
+            <div onClick={handSeach} style={{lineHeight: '100px', paddingRight: '80px'}}>
             <Icons name3 = "fa-solid fa-magnifying-glass" />
             </div>
-            <Seach />
+            {seach ? <Seach /> : null}
+            
             </div>
         </div>
     )

@@ -49,7 +49,7 @@ const [select, setSelect]=  useState('Chọn xe bạn cần')
 <div style={{display: 'flex'}}>
 
 <div className="dropdown" style={{paddingTop: '10px'}}>
-  <button style={{width: '291px'}} type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+  <button style={{width: '291px', backgroundColor: "#ccc", border: "1px solid #fff"}} type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       {select}
     </button>
   <ul className="dropdown-menu">
@@ -72,12 +72,12 @@ const [select, setSelect]=  useState('Chọn xe bạn cần')
 </form>
 <div style={{display: 'flex'}}>
 
-<button  style={{marginTop: '20px', marginLeft: '100px'}} onClick={handleClick} type="button" className="btn btn-primary position-relative">
+<button  style={{marginTop: '20px', marginLeft: '100px', backgroundColor: "#ccc" , border: "1px solid #fff"}} onClick={handleClick} type="button" className="btn btn-primary position-relative">
   Đăng kí
-  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+  {/* <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
     Sẵn sàng
     <span className="visually-hidden">unread messages</span>
-  </span>
+  </span> */}
 </button>
 
 </div>
