@@ -11,6 +11,7 @@ import {useState} from 'react'
 import Seach from '../seach/Seach';
 import {useDispatch , useSelector} from 'react-redux'
 import { useEffect} from 'react';
+import Link from 'next/link'
 const Header = ()=>{
     interface rootSeach {
         id : number,
@@ -62,7 +63,9 @@ const Header = ()=>{
          
          <ul className={clsx(Styles.list)}>
            <li>
-           <a>GIỚI THIỆU</a>
+            <Link style={{textDecoration:'none', color: 'black'}} href="/">
+           GIỚI THIỆU
+            </Link>
            </li>
            <li><a>BẢNG GIÁ XE</a></li>
            <li>

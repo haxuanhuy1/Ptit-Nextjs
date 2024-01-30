@@ -7,14 +7,23 @@ import {C200 , C200EvantGarfe , C300,E180,E200,ESQ,E300,Glc200,Glc300,GLS450,
     S450,S450lx,c200cu2018,c200cu2019,e200cu,e200dencu,glc200cu,c250,nhatrang, cantho,hoankiem} from '../../component/Img/Img.tsx'
 const Seach = ()=>{
     const [post , setPost] = useState([]);
+    const [chane , setChane]=  useState('c500')
+    const handOnchane = (e)=>{
+        setChane(e.target.value)
+        console.log(e.target.value)
+    }
     useEffect(()=>{
         const fetchData = async ()=>{
-          const response = await fetch(`http://localhost:3001/Mercerdes?q=Glc`);
+            if (chane.trim() === '') {
+                setPost([]); // Đặt state post về mảng trống
+                return;
+              }
+          const response = await fetch(`http://localhost:3001/Mercerdes?q=${chane}`);
           const data2 = await response.json()
           setPost(data2)
         }
          fetchData()
-      }, [])
+      }, [chane])
       useEffect(()=>{
         console.log(post)
       }, [post])
@@ -33,6 +42,8 @@ const handclickSeach = ()=>{
     router.push('/Dasboad')
     console.log('ha xuan huy')
 }
+
+
     return (
 <div>
 
@@ -40,18 +51,17 @@ const handclickSeach = ()=>{
 
          <nav className="navbar navbar-light bg-light">
   <form className={clsx("form-inline" , Styles.form)}/>
-    <input onChange={e => e.target.value} className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+    <input onChange={handOnchane} className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
 </nav>  
 {
  post.length >0 ?  <div className={clsx(Styles.seach2)} >
     <div style={{borderBottom: "1px solid #ccc"}}>
     {post.map((post2)=> (
-        <Link href='/Dasboad/1'>
+        <Link style={{textDecoration: 'none'}} href={`/Dasboad/${post2.id}`} >
         <div onClick={handclickSeach} className={clsx(Styles.seach3)}>
             <img style={{width: '100px'}} src={post2.img}></img>
             <div className={clsx(Styles.seach4)}>
-                
-            <span>{post2.name2}</span>
+            <span style={{textDecoration: 'none'}}>{post2.name2}</span>
             <p>{post2.gia}</p>
                 
             </div>
