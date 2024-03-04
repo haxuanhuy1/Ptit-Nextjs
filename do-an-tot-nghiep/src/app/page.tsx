@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
+
 import reduxStore from '../../component/Redux/Store/Store';
 import Header from '../../component/Header/Header';
 import Slide from '../../component/Slider/Slider';
@@ -8,9 +8,9 @@ import Content from '../../component/Content/Content';
 import Footer from '../../component/Footer/Footer';
 import Contracts from '../../component/nhap/Nhap';
 
-const store = configureStore({
-  reducer: reduxStore,
-});
+// const store = configureStore({
+//   reducer: reduxStore,
+// });
 
 const Home = () => {
   return (
